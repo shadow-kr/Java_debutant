@@ -1,0 +1,71 @@
+
+public class Tab1
+{
+public static void main (String args[])
+	{
+	int tab[ ] ;
+	tab = new int[4];
+	tab[0]=5;
+	tab[1]=3;
+	tab[2]=7;
+	tab[3]=tab[0]+tab[1];
+	
+	for(int i=0;i<4;i++) 
+	System.out.println(tab[i] );
+	
+	String tabjo[ ] ;
+	tabjo = new String[5];
+	tabjo[0]=new String("Jonathan");
+	tabjo[1]=new String("Joseph");
+	tabjo[2]=new String("Jotaro");
+	tabjo[3]=new String("Joscke");
+	tabjo[4]=new String("Gio");
+	
+	
+	for(int i=0;i<5;i++) 
+		System.out.println(tabjo[i] );
+	
+	
+	///Longeur de la chaine de caractere
+	int n = tabjo[4].length(); 
+	System.out.println(n );
+	
+	///retourne  qu'une partie du string : substring(int debut, int fin)  
+	String k = tabjo[1].substring(0,3);
+	System.out.println(k );
+	
+	///retourne le caratere de la position donné : .charAt(int position) 
+	char x = tabjo[1].charAt(0); 
+	System.out.println(x );
+	
+	char y = tabjo[1].charAt(2); 
+	System.out.println(y );
+	
+	///pour tester si 2 chaînes sont égales il faut utiliser la méthode boolean equals(String str):
+	boolean a, b, c, d;
+	
+	a = tabjo[2].equals("Jotaro");
+	System.out.println(a );
+	
+	///pour tester si 2 chaînes sont égales à la casse près il faut utiliser equalsIgnoreCase(String str)
+	b = tabjo[2].equalsIgnoreCase("Jotaro");
+	System.out.println(b );
+	
+	//tester si une chaine de caractère commence par jo : on utilise boolean startsWith(String str)  
+	c= tabjo[4].startsWith("jo");
+	System.out.println(c );
+	
+	//tester si une chaîne de caractère se termine par o : on utilise boolean endsWith(String str)  
+	d= tabjo[4].endsWith("o");
+	System.out.println(d);
+	
+	//utiliser les fonction math
+	 double racine=Math.sqrt(4);
+	 double puissance = Math.pow(3,2);
+
+	 System.out.println(racine);
+	 System.out.println( puissance);
+
+}
+
+}

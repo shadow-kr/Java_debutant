@@ -1,0 +1,38 @@
+package exo2;
+
+class Compte 
+{
+	private long numero;
+	private Client client;
+	private double solde;
+	public Compte(long numero, Client c)
+	{
+	  this.numero = numero;
+		client = c;
+		solde = 0.0;
+	}
+	public double getSolde()
+	{
+		return solde;
+	}
+		public Client getClient(){
+		return client;
+	}
+	public long getNumero(){
+		return numero;
+	}
+	public void credit(double m)
+	{
+		solde += m;
+	}
+	public void debit(double m)
+	{
+		solde -= m;
+	}
+	public String toString()
+	{
+		String res;
+		res = "Compte " + numero + " - client " + client.getNom() + " - " + solde;
+		return res;
+	}
+}

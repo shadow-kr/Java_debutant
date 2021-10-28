@@ -1,0 +1,117 @@
+
+//une classe est un fihcier java qui aide à créer des obj
+public class Hello {
+/////////////////////////////////////////////////////////////////////////////////////////////////	
+	// ajouter_intorogation est une methodes qu'il faut apperler
+	public static void ajouter_intorogation(String s) {
+		System.out.println(s + "?");
+			
+	}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////	
+// ajouter_exclamation est une methodes qu'il faut apperler
+// la valeur de retour est String  attention à la majiscule
+	public static String ajouter_exclamation(String s) {
+		return s + "!" ;
+
+	}
+	
+/////////////////////////////////////////////////////////////////////////////////////////////////	
+//condition
+	public static void condition_if(int a) {
+		 
+		if(a<5) {
+			System.out.println(" a est inférieur à 5");	
+		} else if (a == 3) {
+			System.out.println("a == 3");	
+		  } else { 
+			System.out.println("a est supérieur à 5  ");	
+		    }	
+	}
+	
+/////////////////////////////////////////////////////////////////////////////////////////////////	
+//boucle for
+	public static void boulce_for(int l) {
+	
+		for(int i=0;i<l;i++) {
+			System.out.println("Loading!");
+		}
+			
+	}
+	
+/////////////////////////////////////////////////////////////////////////////////////////////////	
+//boucle while
+	public static void boulce_while(int p) {
+		
+		int o = 5;
+		while(o < p) {
+			System.out.println("charging!!!");
+			o++;
+		}
+
+	}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////	
+//try_catch permet de tester se qui se trouve dans try sinon on execute catch
+	public static void try_catch() {
+		try {
+			System.out.println("hi, keep wokring!!!");
+			
+		}catch(Exception e ) {
+			System.out.println("there's a problem!!!");
+
+		}
+
+
+	}
+
+//////////////////////////////////////////MAIN///////////////////////////////////////////////////////		
+	// main est une methodes ici c'est main
+	public static void main(String[] args) {
+		// c'est declaration sont appeler primaire
+		int  j = 3;
+		char b = 'K';
+		long c = 300;
+		double d = 3.33; 
+		
+		//sting est un objet qu'on peut modifier c'est pour ca pas de couleur dans string
+		String name = "amelia"; 
+		
+		//pour afficher System.out.println()
+		//comme name est un string qui est un objet on peut le modifier
+		System.out.println(name.toUpperCase()); //rendre en Maj avec .toUppercase
+		System.out.println(name.toLowerCase()); //rendre en min avec .toLowercase
+		
+		//utiliser la methode ajouter_intorogation
+		ajouter_intorogation(name);
+		
+		//utiliser la methode ajouter_exclamation avec return
+		String exclamation = ajouter_exclamation(name);
+		System.out.println(exclamation);
+		
+		// utiliser une methode d'un autre fichier "World.java"
+		//créer un obj
+		World z = new World(); 
+		String dio= z.za_worldo();
+		System.out.println(dio);
+		
+		//utiliser la methode condition if
+		condition_if (7);
+		
+		//utiliser la methode boucle for
+		boulce_for(3);
+		
+		//utiliser la methode boucle while
+		boulce_while(7);
+		
+		//utiliser la methode try catch
+		try_catch();
+		
+		//pour utiliser des codes externe on utilise des API=long liste of methodes
+	}
+
+		
+		
+
+
+}

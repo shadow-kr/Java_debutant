@@ -1,0 +1,14 @@
+//Voici un programme d’utilisation de Cercle
+public class TstCerD
+{
+	public static void main (String args[])
+	{
+		Cercle c = new Cercle (3, 8, 2.5) ;
+		c.affiche() ;
+		c.deplaceCentre (1, 0.5) ;
+		c.changeRayon (5.25) ;
+		c.affiche() ;
+		Point a = c.getCentre() ;
+		a.affiche() ;
+	}
+}

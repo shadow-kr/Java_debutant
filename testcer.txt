@@ -1,0 +1,15 @@
+package exo1_2;
+//Voici un programme d’utilisation de Cercle
+public class TstCerD
+{
+public static void main (String args[])
+{
+	Cercle c = new Cercle (10, 10, 3) ;
+	c.affiche() ;
+	c.deplaceCentre (2, 2) ;
+	c.changeRayon (10.5) ;
+	c.affiche() ;
+	Point a = c.getCentre() ;
+	a.affiche() ;
+}
+}
